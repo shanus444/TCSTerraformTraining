@@ -26,7 +26,9 @@ Learn the basics of using Terraform to deploy a simple EC2 instance on AWS. This
 
     ```hcl
     provider "aws" {
-      region = "us-west-2"  # Change this to your preferred region
+    region     = "us-east-1"
+    access_key = ""
+    secret_key = ""
     }
 
     resource "aws_instance" "example" {
